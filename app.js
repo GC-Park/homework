@@ -31,7 +31,7 @@ app.use(fileUpload())
 // }
 
 mongoose.connect(
-    'mongodb+srv://Geuncheolpark:vmfkek19@cluster0.1s1cdxv.mongodb.net/test',
+    'mongodb+srv://admin:admin@cluster0.soqt1rm.mongodb.net/?retryWrites=true&w=majority',
     { useNewUrlParser: true, useUnifiedTopology: true }
 )
 
