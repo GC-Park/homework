@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
     image.mv(path.resolve(__dirname, '..','public/assets/img', image.name), async(error)=>{
         await BlogPost.create({
             ...req.body,
-            image: '../public/assets/img/' + image.name
+            image: '/img/' + image.name
         })
         res.redirect('/')
     })

@@ -71,8 +71,8 @@ app.post('/users/login', redirectIfAuthenticateMiddleware, loginUserController)
 app.get('/posts/new', authMiddleware, newPostController)
 app.get('/auth/logout', logoutController)
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8000
 
 app.listen(PORT, () => {
-    console.log('App listening on port 5000')
+    console.log('App listening on port 8000')
 })
